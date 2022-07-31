@@ -2,13 +2,11 @@
 simple seleniumWithPythonDemo
 1. pip install selenium  -- install python selenium client
 
-2. download webdriver
-    Chrome: https://chromedriver.chromium.org/downloads
-    Edge:  	https://developer.microsoft.com/en-us/microsoft-edge/tools/webdriver/
-    Firefox:  https://github.com/mozilla/geckodriver/releases
-    Safari:  https://webkit.org/blog/6900/webdriver-support-in-safari-10/
+2. pip install webdriver-manager -i https://pypi.tuna.tsinghua.edu.cn/simple   --这里使用国内镜像
 
-3. put the webdriver in a specific location which will be refered in the code
+3. import corresponding drvier : 
+         from webdriver_manager.chrome import ChromeDriverManager
+         driver = webdriver.Chrome(ChromeDriverManager().install())
 
 4. import necessary package and classes  --- selenium.webdriver,etc 
 
